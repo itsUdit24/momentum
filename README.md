@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+## 🎯 What Has Been Built
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This isn’t just a UI prototype—this is a **real, full‑stack, real‑time to‑do app**.
 
-## Get started
+✅ Works on **physical devices & simulators** (Android / iOS)  
+✅ Everything updates **instantly** across users (create, complete, delete)  
+✅ No native Swift / Kotlin required—just JavaScript & React Native  
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🧑‍🍳 App Features Overview
 
-2. Start the app
+- 📝 **Todos Tab**
 
-   ```bash
-   npx expo start
-   ```
+  - ➕ Add new tasks
+  - ✅ Mark as completed / uncompleted
+  - 📝 Edit existing tasks
+  - 🗑️ Delete tasks
+  - 📊 Live **progress bar** at the top
 
-In the output, you'll find options to open the app in a
+- ⚙️ **Settings Tab**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  - 📈 View task stats (total, completed, remaining)
+  - 🌙 Toggle **Dark Mode** (actually works!)
+  - 🔔 Notification toggle (UI only)
+  - 🔄 Auto-sync toggle (UI only)
+  - 🚨 **Danger Zone** to delete everything
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 🔄 **Real-Time Sync**
+  - All updates reflect **instantly** across devices
+  - Powered by **Convex** database
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🧠 What I've Learn
 
-```bash
-npm run reset-project
+- 🏗️ Build a mobile app using **React Native + Expo**
+- 🧭 Use both **tab** and **stack** navigation (React Navigation)
+- 🧱 Master core components: `View`, `Text`, `FlatList`, `ScrollView`, `TouchableOpacity`, `Switch`
+- 🌈 Style with gradients, modals, alerts, and themes
+- ⚡ Connect to a real‑time backend with **Convex**
+- 🌓 Implement **Dark Mode** and local state toggles
+- 🧹 Handle deletion, editing, and real-time sync
+- 📱 Run apps on **iOS, Android**, or the **web**—no Mac needed!
+
+---
+
+## 📁 .env Setup
+
+Create a `.env` file in the project root:
+
+```env
+CONVEX_DEPLOYMENT=<get_it_from_convex>
+EXPO_PUBLIC_CONVEX_URL=<get_it_from_convex>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Run the app
 
-## Learn more
+```bash
+npm install
+npx expo
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Run the Convex db
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Open a seperate terminal and run;
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx convex dev
+```
