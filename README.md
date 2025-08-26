@@ -1,6 +1,6 @@
 ## 🎯 What Has Been Built
 
-This isn’t just a UI prototype—this is a **real, full‑stack, real‑time to‑do app**.
+This isn’t just a UI prototype—this is a **real, full‑stack, real‑time to‑do application**.
 
 ✅ Works on **physical devices & simulators** (Android / iOS)  
 ✅ Everything updates **instantly** across users (create, complete, delete)  
